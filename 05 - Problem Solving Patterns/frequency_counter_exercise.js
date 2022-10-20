@@ -9,13 +9,14 @@ const validAnagram = (word1, word2) => {
     const frequencyCounter1 = {};
     const frequencyCounter2 = {};
 
-    for(let char of word1){
-        frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1;
+    for(let i = 0; i < word1.length; i++){
+        frequencyCounter1[i] = frequencyCounter1[i] ? frequencyCounter1[i] + 1 : 0
     }
 
-    for(let char of word2){
-        frequencyCounter2[char] = (frequencyCounter2[char] || 0) + 1;
+    for(let i = 0; i < word2.length; i++){
+        frequencyCounter2[i] = frequencyCounter2[i] ? frequencyCounter1[i] + 1 : 0
     }
+
 
     for(let key in frequencyCounter1){
         if(!(key in frequencyCounter2)){
