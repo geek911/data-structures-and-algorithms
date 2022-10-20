@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/05 - Problem Solving Patterns/frequency_counter.js"
+            "program": "${workspaceFolder}/05 - Problem Solving Patterns/frequency_counter_exercise.js"
         }
     ]
 }
